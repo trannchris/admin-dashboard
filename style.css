@@ -34,3 +34,28 @@ div {
   grid-template-columns: 1fr 4fr;
   column-gap: 10px;
 }
+
+.main {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 10px;
+}
+
+.projects,
+.announcements,
+.trending {
+  display: grid;
+  grid-template-rows: 30px 10fr;
+}
+
+.projects-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 10px;
+}
+
+.side {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
