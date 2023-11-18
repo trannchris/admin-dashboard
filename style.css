@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 5fr;
+}
+
+div {
+  border: 1px solid black;
+}
+
+.header {
+  grid-column: 2 / 3;
+}
+
+.sidebar {
+  grid-row: 1 / 3;
+}
