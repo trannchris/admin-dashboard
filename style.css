@@ -4,6 +4,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 5fr;
+  height: 100vh;
 }
 
 div {
@@ -51,8 +52,9 @@ div {
   border-radius: 20px;
   margin: 10px;
   width: auto;
-  height: auto;
+  height: 30%;
   background: gray;
+  align-self: center;
 }
 
 svg {
@@ -82,4 +84,22 @@ svg {
 .icon {
   align-self: center;
   justify-self: end;
+}
+
+.user-info {
+  align-self: center;
+}
+
+.button {
+  margin: 5px;
+  padding: 5px 20px;
+  border-radius: 20px;
+  background-color: lightblue;
+  align-self: center;
+  justify-self: center;
+}
+
+img {
+  border-radius: 50%;
+  margin: 10px;
 }
