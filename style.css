@@ -42,6 +42,24 @@ div {
   gap: 10px;
 }
 
+.search {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+}
+
+.searchbar {
+  border-radius: 20px;
+  margin: 10px;
+  width: auto;
+  height: auto;
+  background: gray;
+}
+
+svg {
+  height: 25px;
+  width: 25px;
+}
+
 .projects,
 .announcements,
 .trending {
@@ -59,4 +77,9 @@ div {
   display: grid;
   grid-template-rows: 1fr 1fr;
   gap: 10px;
+}
+
+.icon {
+  align-self: center;
+  justify-self: end;
 }
