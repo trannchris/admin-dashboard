@@ -21,6 +21,7 @@ div {
 img {
   border-radius: 50%;
   margin: 10px;
+  margin-left: 20px;
 }
 
 svg {
@@ -59,6 +60,13 @@ svg {
   grid-column: 3 / 5;
 }
 
+.user-intro,
+.user-info {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  align-items: center;
+}
+
 .main {
   display: grid;
   grid-template-columns: 4fr 1fr;
@@ -75,7 +83,7 @@ svg {
   margin: 10px;
   width: auto;
   height: 30%;
-  background: gray;
+  background: #d1d5db;
   align-self: center;
 }
 
@@ -111,7 +119,8 @@ svg {
   margin: 5px;
   padding: 5px 20px;
   border-radius: 20px;
-  background-color: lightblue;
+  background-color: var(--main-color);
+  color: white;
   align-self: center;
   justify-self: center;
 }
