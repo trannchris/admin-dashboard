@@ -173,10 +173,14 @@ h2 {
 }
 
 .project-card p,
-.announcements p {
+.announcements p,
+.desc {
+  color: gray;
+}
+
+.project-card p {
   margin-top: 5px;
   margin-left: 20px;
-  color: gray;
 }
 
 .announcements p {
@@ -196,5 +200,10 @@ h2 {
 .trending-content {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  grid-auto-rows: 60px;
+  grid-auto-rows: min-content;
+  align-items: center;
+}
+
+.trending-content p {
+  margin-left: 10px;
 }
