@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 :root {
   --main-color: #1992d4;
@@ -35,6 +35,19 @@ h2 {
   margin-top: 20px;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.name {
+  font-size: 1.6em;
+}
+
+.icon {
+  align-self: center;
+  justify-self: end;
+}
+
 .sidebar {
   display: grid;
   grid-auto-rows: min-content;
@@ -55,12 +68,17 @@ h2 {
   align-items: center;
 }
 
+.sidebar-title svg {
+  height: 50px;
+  width: 50px;
+}
+
 .header {
   display: grid;
   grid-template-columns: 6fr repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column: 2 / 3;
-  box-shadow: var(--shadow-color) 2px 5px;
+  box-shadow: var(--shadow-color) 10px 5px 3px;
 }
 
 .user-info {
@@ -116,11 +134,6 @@ input[type="text"] {
   gap: 10px;
 }
 
-.icon {
-  align-self: center;
-  justify-self: end;
-}
-
 .user-info {
   align-self: center;
 }
@@ -157,7 +170,11 @@ input[type="text"] {
 .announcements-content {
   display: grid;
   grid-auto-rows: min-content;
-  height: min-content;
+  align-content: center;
+}
+
+.announcement:not(:last-child) {
+  border-bottom: 1px solid var(--shadow-color);
 }
 
 .announcement {
@@ -200,6 +217,7 @@ input[type="text"] {
   grid-template-columns: 1fr 3fr;
   grid-auto-rows: min-content;
   align-items: center;
+  align-content: center;
 }
 
 .trending-content p {
