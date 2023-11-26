@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 :root {
-  --main-color: #4338ca;
-  --secondary-color: #d1d5db;
+  --main-color: #1992d4;
+  --secondary-color: #e2e8f0;
   --border-color: #f0b429;
+  --shadow-color: #d1d7de;
 }
 
 body {
@@ -14,10 +15,6 @@ body {
   grid-template-rows: 1fr 5fr;
   height: 100vh;
   font-family: "Roboto", sans-serif;
-}
-
-div {
-  border: 1px solid black;
 }
 
 img {
@@ -60,10 +57,10 @@ h2 {
 
 .header {
   display: grid;
-  grid-template-columns: 4fr repeat(3, 1fr);
+  grid-template-columns: 6fr repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column: 2 / 3;
-  box-shadow: gray 2px 5px;
+  box-shadow: var(--shadow-color) 2px 5px;
 }
 
 .user-info {
@@ -141,15 +138,14 @@ h2 {
 .trending-content {
   background-color: white;
   border-radius: 5px;
-  box-shadow: gray 2px 5px 3px;
+  box-shadow: var(--shadow-color) 2px 5px 3px;
   margin: 10px;
 }
 
 .project-card {
   display: grid;
   grid-template-rows: 2fr min-content;
-  border-left-color: var(--border-color);
-  border-left-width: 10px;
+  border-left: 8px solid var(--border-color);
 }
 
 .projects h3 {
